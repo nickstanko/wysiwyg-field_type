@@ -66,7 +66,7 @@
                     return false;
                 }
 
-                let url = file.indexOf('http') == 0 ? file : REQUEST_ROOT_PATH + '/files/download/' + file;
+                let url = file.indexOf('http') == 0 ? file : APP_URL + REQUEST_ROOT_PATH + '/files/download/' + file;
 
                 this.insert.node($('<a />').attr('href', url).text(this.selection.is() ? this.selection.text() : url));
 
